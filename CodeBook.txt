@@ -1,0 +1,52 @@
+=================================================
+Samsung Galaxy S accelerometer and gyroscope data  
+=================================================
+CodeBook
+Version 1.0
+02 March 2018
+Ehsan Danesh
+=================================================
+
+The features/variables selected for this database come from the original list of features acquired from the Samsung Galaxy S accelerometer and gyroscope data. For a complete list of features and the way they have been drived, take a look at features.txt and features_info.txt in:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Here, only the Mean and Standard Deviation (Std) variables for each measurement are used. The experiments have been carried out with a group of 30 volunteers (Subjects). Each Subject performed six Activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing the smartphone on the waist. 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+Note: Features are normalized and bounded within [-1,1].
+
+
+Data Dictionary:
+
+Subject
+        1 to 30 - An identifier of the subject who carried out the experiment.
+Activity
+        WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+
+TimeBodyAcc-XYZ
+TimeGravityAcc-XYZ
+TimeBodyAccJerk-XYZ
+TimeBodyGyro-XYZ
+TimeBodyGyroJerk-XYZ
+TimeBodyAccMag
+TimeGravityAccMag
+TimeBodyAccJerkMag
+TimeBodyGyroMag
+TimeBodyGyroJerkMag
+FreqBodyAcc-XYZ
+FreqBodyAccJerk-XYZ
+FreqBodyGyro-XYZ
+FreqBodyAccMag
+FreqBodyAccJerkMag
+FreqBodyGyroMag
+FreqBodyGyroJerkMag
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+TimeBodyAccMean
+TimeBodyAccJerkMean
+TimeBodyGyroMean
+TimeBodyGyroJerkMean
